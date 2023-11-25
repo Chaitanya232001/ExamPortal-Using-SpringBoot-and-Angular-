@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>All Users</h1>
+    <table class="user_table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>username</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>email</th>
+          <th>phone</th>
+          <th>Password</th>
+          <th>newPassword</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="user : ${users}">
+          <td th:text="${user.username}"></td>
+          <td th:text="${user.FirstName}"></td>
+          <td th:text="${user.LastName}"></td>
+          <td th:text="${user.email}"></td>
+          <td th:text="${user.phone}"></td>
+          <td th:text="${user.Password}"></td>
+          <td th:text="${user.newPassword}"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

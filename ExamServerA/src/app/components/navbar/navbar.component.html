@@ -1,0 +1,52 @@
+
+  <!-- href="/registration",  href="/sign-in"-->
+  <mat-toolbar color="primary">
+  <a
+  routerLink="/"
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu_book</mat-icon>
+</a>
+  <span>Examportal</span>
+  <span class="example-spacer ml20"></span>
+  <a
+ 
+  [routerLink]="'/sign-in'"
+    mat-icon-button
+    class="example-icon favorite-icon mr50 ml20"
+    aria-label="Example icon-button with heart icon"
+    style="font-size: medium"
+  >
+    Login
+</a>
+  <a
+  [routerLink]="'/registration'"
+    mat-icon-button
+    class="example-icon favorite-icon mr100"
+    aria-label="Example icon-button with heart icon"
+    style="font-size: small"
+  >
+    Register
+</a>
+<a
+  [routerLink]="'/allusers'"
+    mat-icon-button
+    class="example-icon favorite-icon mr100"
+    aria-label="Example icon-button with heart icon"
+    style="font-size: small"
+  >
+    UserList
+</a>
+<a
+  [routerLink]="'/updatepassword'"
+    mat-icon-button
+    class="example-icon favorite-icon mr100"
+    aria-label="Example icon-button with heart icon"
+    style="font-size: small"
+  >
+    UpdatePassword
+</a>
+</mat-toolbar>
+<router-outlet></router-outlet>

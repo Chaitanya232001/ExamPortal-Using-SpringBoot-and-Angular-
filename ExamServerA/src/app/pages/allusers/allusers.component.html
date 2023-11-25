@@ -1,0 +1,27 @@
+<p>allusers works!</p>
+<table *ngIf="registrations" border="">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>phone</th>
+        <th>password</th>
+        <th>profile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of registrations">
+        <th>{{user.id}}</th>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.password }}</td>
+        <td>{{user.profile}}</td>
+      </tr>
+    </tbody>
+  </table>

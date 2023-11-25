@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login to the Exam Portal</h1>
+    </header>
+    <main>
+        <form action="./SignIn" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <label for="Password">Password:</label>
+            <input type="Password" name="Password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+        
+        <!-- Link to registration page for users who are not registered -->
+        <p>Not registered? <a href="./Registration">Register here</a></p>
+        <p>Forgot Password? <a href="./ForgotPassword">Forgot Password</a></p>
+    </main>
+</body>
+</html>
